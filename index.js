@@ -47,9 +47,8 @@ startQuiz.addEventListener("click", () => {
 const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
   const data = await res.json();
-  const quizData = data;
-  console.log(quizData);
-  displayQuiz(quizData);
+  quizData = data;
+  displayQuiz(data);
 };
 
 // Displaying quiz on quiz page
@@ -109,7 +108,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
+  console.log(storage);
   if (storage) {
     localStorage.setItem(
       "results",
@@ -183,4 +183,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
+});
+document.getElementById("blog").addEventListener("click", () => {
+  location.assign("./blog.html");
 });
