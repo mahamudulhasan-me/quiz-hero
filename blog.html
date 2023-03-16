@@ -18,8 +18,19 @@
     />
     <title>Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="bg-white font-common">
     <!-- Header/Navbar section start -->
     <header class="h-16 flex items-center shadow-sm">
       <nav class="flex justify-between items-center w-9/12 mx-auto">
@@ -31,12 +42,77 @@
         </div>
         <button
           class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
-          id="home"
+          onclick="changeLocation()"
         >
           Home
         </button>
       </nav>
     </header>
     <!-- Header/Navbar section end -->
+    <!-- Question Answer Section Start -->
+    <main class="w-9/12 mx-auto">
+      <section>
+        <!-- Question 1 -->
+        <h1
+          class="font-smibold text-zinc-800 my-5 pb-3 border-b-2 border-zinc-400 text-2xl"
+        >
+          Three Question Answer
+        </h1>
+        <div>
+          <h2 class="text-green-700 text-xl">
+            Q.1-What is difference between
+            <span class="font-semibold">map(), forEach(), filter()</span> and
+            <span class="font-semibold">find()</span> method?
+          </h2>
+          <!-- Question 1 Answer  -->
+          <h4 class="text-zinc-800 text-justify border-b">
+            <span class="text-xl text-green-700 underline">Answer:</span>
+          </h4>
+          <!-- Question 2 -->
+          <h2 class="text-green-700 text-xl">
+            Q.1-What is the difference between
+            <span class="font-semibold">cookies, local storage,</span> and
+            <span class="font-semibold">session storage</span>?
+          </h2>
+          <h4 class="text-zinc-800 border-b">
+            <span class="text-xl text-green-700 underline">Answer:</span>
+          </h4>
+          <h2 class="text-green-700 text-xl">
+            Q.1-What is an
+            <span class="font-semibold">event loop</span> and how does it work?
+          </h2>
+          <h4 class="text-zinc-800">
+            <span class="text-xl text-green-700 underline">Answer:</span>
+          </h4>
+        </div>
+      </section>
+
+      <!-- Function Operation Describe -->
+      <section>
+        <h1
+          class="font-smibold text-zinc-800 my-5 pb-3 border-b-2 border-zinc-400 text-2xl"
+        >
+          Exposition of Function Operation
+        </h1>
+        <div>
+          <h4>
+            <span class="text-green-700 text-xl underline"
+              >function <span class="font-semibold"> quizTimer():</span></span
+            >
+          </h4>
+          <h4>
+            <span class="text-green-700 text-xl underline"
+              >function <span class="font-semibold"> chooseQuiz():</span></span
+            >
+          </h4>
+        </div>
+      </section>
+    </main>
+    <!-- Question Answer Section End -->
+    <script>
+      function changeLocation() {
+        location.assign("./index.html");
+      }
+    </script>
   </body>
 </html>
