@@ -51,7 +51,7 @@
     <!-- Header/Navbar section end -->
 
     <!-- Main section Start -->
-    <main class="w-9/12 mx-auto">
+    <main class="w-9/12 mx-auto mb-16">
       <!-- Question Answer Section Start -->
       <section>
         <!-- Question 1 -->
@@ -163,18 +163,28 @@
             <span class="text-green-700 text-xl underline"
               >function <span class="font-semibold"> quizTimer():</span></span
             >
-            This function take an argument, if the value of the argument is true
-            then clear the setInterval i.e. turns off the time count. <br />
+            This function take an argument <i>dismiss</i>, if the value of the
+            argument is true then clear the setInterval i.e. turns off the time
+            count.
+            <br />
             If the value of the argument is false then a timing operation is
             performed and displayed via the query selector. <br />
             If the total count value is greater than 60 seconds each time the
             count is incremented, then every odd numbered second after that will
             be a little more colorful and even will be a little less colorful.
           </h4>
-          <h4>
+          <h4 class="text-lg text-justify">
             <span class="text-green-700 text-xl underline"
               >function <span class="font-semibold"> chooseQuiz():</span></span
             >
+            This function takes two arguments <i>index</i> and <i>givenAns</i>.
+            <br />
+            That handles user-selected quiz answers and stores them in an array.
+            It first checks if an answer has already been stored for the current
+            quiz question, and updates the existing answer if one is found. If
+            no existing answer is found, it adds a new answer to the array. The
+            function then calls another function to display the user's answers
+            on the webpage.
           </h4>
         </div>
       </section>
