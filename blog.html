@@ -49,8 +49,10 @@
       </nav>
     </header>
     <!-- Header/Navbar section end -->
-    <!-- Question Answer Section Start -->
+
+    <!-- Main section Start -->
     <main class="w-9/12 mx-auto">
+      <!-- Question Answer Section Start -->
       <section>
         <!-- Question 1 -->
         <h1
@@ -65,20 +67,62 @@
             <span class="font-semibold">find()</span> method?
           </h2>
           <!-- Question 1 Answer  -->
-          <h4 class="text-zinc-800 text-justify border-b">
+          <h4 class="text-zinc-800 text-justify border-b text-lg">
             <span class="text-xl text-green-700 underline">Answer:</span>
+            These are all array methods that are used to perform various
+            operations on arrays. <br />
+            <strong>map():</strong> This method takes a function as a parameter
+            and applies it to the original array and returns a new array. The
+            function takes each element as input and returns a new value, which
+            is added to the new array. This method does not change the original
+            array.<br />
+            <strong>forEach():</strong> This method applies a function to each
+            element in the array but does not return anything. This method is
+            useful for performing some action on each element in the array.
+            <br />
+            <strong>filter(): </strong>This method takes a callback function as
+            a parameter, returns a new array and containing only the elements
+            that pass the specified by a function. <br />
+            <strong>find(): </strong>This method takes a callback function as a
+            parameter, and returns only the first elements that pass the
+            specified by a function. The function is applied to each element in
+            the array until an element is found that returns a true value.
+            <br />
           </h4>
           <!-- Question 2 -->
           <h2 class="text-green-700 text-xl">
-            Q.1-What is the difference between
+            Q.2-What is the difference between
             <span class="font-semibold">cookies, local storage,</span> and
             <span class="font-semibold">session storage</span>?
           </h2>
-          <h4 class="text-zinc-800 border-b">
+          <h4 class="text-zinc-800 border-b text-lg">
             <span class="text-xl text-green-700 underline">Answer:</span>
+            These are all ways to store data in a user's browser, but there are
+            some key differences between them.<br />
+            <strong>Cookies: </strong>Cookies are small text files that are
+            stored in a user's browser by a website. They are used for
+            authentication and tracking purposes and make it easier to visit the
+            site again and make the site more useful. Cookies are sent to the
+            server with each request. Cookies are limited to about 4KB of data.
+            <br />
+            <strong>Local Storage: </strong>The local storage is another way to
+            store data in a user's browser. Local storage stores data with no
+            expiration date. The data is not deleted when the browser is closed,
+            and are available for future sessions. Local storage can be used to
+            store larger amounts of data than cookies (up to 5-10MB), and it can
+            be accessed using JavaScript. Data stored in local storage is not
+            sent to the server. Local storage stored data to specific website
+            domain that can not accessed to another website. <br />
+            <strong>Session Storage: </strong>Session storage is similar to
+            local storage. Session storage stores data for only one session. The
+            data is deleted when the browser is closed. Session storage can be
+            used to store larger amounts of data than cookies (up to 5-10MB),
+            and it can be accessed using JavaScript. Data stored in session
+            storage is not sent to the server. Session storage stored data to
+            specific website domain that can not accessed to another website.
           </h4>
           <h2 class="text-green-700 text-xl">
-            Q.1-What is an
+            Q.3-What is an
             <span class="font-semibold">event loop</span> and how does it work?
           </h2>
           <h4 class="text-zinc-800">
@@ -86,7 +130,7 @@
           </h4>
         </div>
       </section>
-
+      <!-- Question Answer Section End -->
       <!-- Function Operation Describe -->
       <section>
         <h1
@@ -108,7 +152,8 @@
         </div>
       </section>
     </main>
-    <!-- Question Answer Section End -->
+    <!-- Main Section End  -->
+
     <script>
       function changeLocation() {
         location.assign("./index.html");
